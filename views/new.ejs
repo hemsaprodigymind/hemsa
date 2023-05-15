@@ -1,0 +1,40 @@
+<% layout('layout/boilerplate') %> 
+<div class="row">
+    <h1 class="text-center">New Place</h1>
+    <div class="col-6 offset-3">
+        <form action="/places" method="post" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="title">Title for Your Post</label>
+                <input class="form-control" type="text" name="title" id="title" placeholder="enter title" required>
+                <div class="valid-feedback">
+                    looks good
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location"> Enter location</label>
+                <input class="form-control" type="text" name="location" id="location" placeholder="enter location" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="days">How many days You stayed here</label>
+                <input class="form-control" type="text" name="days" id="days" placeholder="Enter Days" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">Enter description</label>
+                <textarea class="form-control" type="text" name="description" id="description" placeholder="Enter desc"  required></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="image">Enter Image URL</label>
+                <input class="form-control" type="text" name="image" id="image" placeholder="Enter url" required>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success">Upload</button>
+            </div>
+            
+        </form>
+
+    </div>
+</div>
+
+    
+
+    
